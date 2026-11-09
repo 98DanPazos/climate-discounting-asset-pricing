@@ -1,0 +1,7 @@
+# Copy this file to `.Renviron` (same folder) and fill in your key.
+# .Renviron is git-ignored so the key never reaches GitHub.
+# Free key: https://fred.stlouisfed.org/docs/api/api_key.html
+FRED_API_KEY=your_key_here
+
+# Set to TRUE to ignore cached downloads and pull everything fresh.
+FORCE_DOWNLOAD=FALSE

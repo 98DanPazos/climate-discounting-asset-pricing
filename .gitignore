@@ -1,0 +1,20 @@
+# Secrets
+.Renviron
+
+# Raw downloads are reproducible via R/run_all.R — keep the repo light
+data/raw/*
+!data/raw/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

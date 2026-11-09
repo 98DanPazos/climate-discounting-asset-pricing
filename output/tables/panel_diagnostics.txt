@@ -1,0 +1,15 @@
+PANEL DIAGNOSTICS
+Built: 2026-11-09 17:40:59.96319
+
+Estimation sample (non-missing growth & temp): 10216 obs
+Countries: 185   Years: 1961-2025
+Avg years per country: 55.2
+
+Growth (log-diff) vs WDI growth series, correlation: 0.9853
+  (should be > 0.99; a lower value means a level/growth mismatch to inspect)
+
+Temperature range: -20.7 to 29.8 °C
+Growth range: -103.3 to 87.8 %  (extreme values = wars/oil states;
+  Step 2 checks robustness to trimming the top/bottom 1%)
+
+WDI countries with no temperature match (30): ABW, BMU, BRB, CHI, CUW, DMA, FSM, GIB, GRD, GUM, KNA, LCA, LIE, MAC, MAF, MCO, MDV, MHL, MLT, MNP, NRU, PLW, SGP, SMR, SXM, TCA, TON, TUV, VGB, XKX

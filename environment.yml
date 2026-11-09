@@ -1,0 +1,38 @@
+# Conda environment for the whole project: R for data + econometrics,
+# Python for the discounting engine (Step 3) and dashboard (Step 6).
+#
+#   conda env create -f environment.yml
+#   conda activate climate_ap
+#   Rscript R/00_setup.R        # installs anything conda-forge didn't cover
+#
+name: climate_ap
+channels:
+  - conda-forge
+dependencies:
+  # ---------- R ----------
+  - r-base=4.4
+  - r-irkernel          # lets Jupyter run R notebooks
+  - r-dplyr
+  - r-tidyr
+  - r-readr
+  - r-purrr
+  - r-stringr
+  - r-lubridate
+  - r-ggplot2
+  - r-scales
+  - r-fixest
+  - r-modelsummary
+  - r-sandwich
+  - r-lmtest
+  - r-wdi
+  - r-fredr
+  # frenchdata is installed from CRAN by R/00_setup.R
+  # ---------- Python ----------
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - plotly
+  - pytest
+  - jupyterlab
