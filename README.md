@@ -12,7 +12,7 @@ The original brief compared fixed, Weitzman certainty-equivalent, stochastic (Ne
 | 4. Asset pricing | Is temperature risk priced in equity returns? | Temperature betas + Fama–MacBeth on 49 industry portfolios (Bansal, Kiku & Ochoa) | R |
 | 5. Dashboard | Interactive summary | Plotly | Python |
 
-> **Status:** Step 1 (data pipeline) and Step 2 (damage regressions, `notebooks/01_damages.ipynb`) complete. Later modules in progress.
+> **Status:** Step 1 (data pipeline), Step 2 (damage regressions, `notebooks/01_damages.ipynb`) and Step 3 (discounting engine, `notebooks/02_discounting.ipynb`) complete. SCC and asset-pricing modules in progress.
 
 ## What changed from the original paper
 
@@ -37,7 +37,9 @@ conda env create -f environment.yml
 conda activate climate_ap
 Rscript R/00_setup.R          # one-time package check
 cp .Renviron.example .Renviron   # then paste your FRED key
-Rscript R/run_all.R           # downloads + builds data/processed/
+Rscript R/run_all.R           # downloads, builds data/processed/, runs Module 1
+python python/run_discounting.py   # Module 2: calibrate + compare discounting methods
+pytest python/tests                # unit tests for the discounting engine
 ```
 
 On Windows (Anaconda Prompt) use `copy` instead of `cp`.
@@ -46,7 +48,7 @@ On Windows (Anaconda Prompt) use `copy` instead of `cp`.
 
 ```
 R/                 data pipeline + econometrics (R)
-python/            discounting engine (Python, Step 3)
+python/            discounting engine (package climate_discount + tests)
 notebooks/         narrative notebooks for each module
 data/raw/          downloads (git-ignored, rebuilt by run_all.R)
 data/processed/    analysis-ready datasets
