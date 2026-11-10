@@ -1,0 +1,31 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{GDP pc growth (pp)}\\
+   Model:           & (1)                   & (2)            & (3)             & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   Temperature (°C) & -0.1208               & 0.2900         & 0.8541$^{***}$  & 0.2900\\   
+                    & (0.1813)              & (0.2822)       & (0.3180)        & (0.5068)\\   
+   Temperature²     &                       & -0.0178$^{**}$ & -0.0335$^{***}$ & -0.0178\\   
+                    &                       & (0.0077)       & (0.0091)        & (0.0142)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   Country          & Yes                   & Yes            & Yes             & Yes\\  
+   Year             & Yes                   & Yes            & Yes             & Yes\\  
+   \midrule
+   \emph{Varying Slopes}\\
+   Year (Country)   &                       &                & Yes             & \\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations     & 10,216                & 10,216         & 10,216          & 10,216\\  
+   R$^2$            & 0.13040               & 0.13152        & 0.18269         & 0.13152\\  
+   Within R$^2$     & $7.62\times 10^{-5}$  & 0.00137        & 0.00206         & 0.00137\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+

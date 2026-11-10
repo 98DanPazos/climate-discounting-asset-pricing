@@ -12,7 +12,7 @@ The original brief compared fixed, Weitzman certainty-equivalent, stochastic (Ne
 | 4. Asset pricing | Is temperature risk priced in equity returns? | Temperature betas + Fama–MacBeth on 49 industry portfolios (Bansal, Kiku & Ochoa) | R |
 | 5. Dashboard | Interactive summary | Plotly | Python |
 
-> **Status:** Step 1 complete — reproducible data pipeline. Later modules in progress.
+> **Status:** Step 1 (data pipeline) and Step 2 (damage regressions, `notebooks/01_damages.ipynb`) complete. Later modules in progress.
 
 ## What changed from the original paper
 

@@ -1,0 +1,73 @@
+                                            Main            Trim 1%
+Sample (Poor)                                                      
+Dependent Var.:               GDP pc growth (pp) GDP pc growth (pp)
+                                                                   
+Temperature (°C)                0.2900 (0.2822)   -0.0578 (0.1621)
+Temperature²                  -0.0178* (0.0077)   -0.0044 (0.0049)
+l(temp, 1)                                                         
+l(temp_sq, 1)                                                      
+Temp. anomaly vs 1951-80 (°C)                                      
+Fixed-Effects:                ------------------ ------------------
+Country                                      Yes                Yes
+Year                                         Yes                Yes
+_____________________________ __________________ __________________
+S.E.: Clustered                      by: Country        by: Country
+Observations                              10,216             10,010
+R2                                       0.13152            0.19297
+Within R2                                0.00137            0.00044
+
+                                   Pop.-weighted          Post-1990
+Sample (Poor)                                                      
+Dependent Var.:               GDP pc growth (pp) GDP pc growth (pp)
+                                                                   
+Temperature (°C)               -0.2595 (0.5996)   1.344** (0.5031)
+Temperature²                   -0.0165 (0.0132) -0.0453** (0.0145)
+l(temp, 1)                                                         
+l(temp_sq, 1)                                                      
+Temp. anomaly vs 1951-80 (°C)                                      
+Fixed-Effects:                ------------------ ------------------
+Country                                      Yes                Yes
+Year                                         Yes                Yes
+_____________________________ __________________ __________________
+S.E.: Clustered                      by: Country        by: Country
+Observations                              10,216              6,452
+R2                                       0.32466            0.16617
+Within R2                                0.00402            0.00631
+
+                                         + 1 lag   Anomaly (linear)
+Sample (Poor)                                                      
+Dependent Var.:               GDP pc growth (pp) GDP pc growth (pp)
+                                                                   
+Temperature (°C)                0.4165 (0.2751)                   
+Temperature²                 -0.0231** (0.0080)                   
+l(temp, 1)                     -0.4921* (0.2094)                   
+l(temp_sq, 1)                    0.0086 (0.0075)                   
+Temp. anomaly vs 1951-80 (°C)                      -0.1208 (0.1813)
+Fixed-Effects:                ------------------ ------------------
+Country                                      Yes                Yes
+Year                                         Yes                Yes
+_____________________________ __________________ __________________
+S.E.: Clustered                      by: Country        by: Country
+Observations                              10,031             10,216
+R2                                       0.13437            0.13040
+Within R2                                0.00204            7.62e-5
+
+                                            Rich               Poor
+Sample (Poor)                                  0                  1
+Dependent Var.:               GDP pc growth (pp) GDP pc growth (pp)
+                                                                   
+Temperature (°C)                0.2326 (0.2224)     1.994. (1.060)
+Temperature²                   -0.0113 (0.0069) -0.0640** (0.0234)
+l(temp, 1)                                                         
+l(temp_sq, 1)                                                      
+Temp. anomaly vs 1951-80 (°C)                                      
+Fixed-Effects:                ------------------ ------------------
+Country                                      Yes                Yes
+Year                                         Yes                Yes
+_____________________________ __________________ __________________
+S.E.: Clustered                      by: Country        by: Country
+Observations                               4,920              5,296
+R2                                       0.18269            0.12020
+Within R2                                0.00076            0.00685
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

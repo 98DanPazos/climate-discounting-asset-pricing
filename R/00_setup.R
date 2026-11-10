@@ -16,9 +16,9 @@ packages <- c(
   # --- econometrics (used from Step 2 onward) --------------------------------
   "fixest",       # fast fixed-effects regressions, clustered/Driscoll-Kraay SEs
   "modelsummary", # publication-quality regression tables
-  "sandwich", "lmtest",
+  "sandwich", "lmtest", "jsonlite",
   # --- plotting ---------------------------------------------------------------
-  "ggplot2", "scales"
+  "ggplot2", "ggrepel", "scales"
 )
 
 missing <- packages[!vapply(packages, requireNamespace, logical(1),

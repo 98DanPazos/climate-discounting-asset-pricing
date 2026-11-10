@@ -37,6 +37,19 @@ for (d in c(DIR_RAW, DIR_PROCESSED, DIR_FIGURES, DIR_TABLES)) {
   dir.create(d, recursive = TRUE, showWarnings = FALSE)
 }
 
+# --- 1b. Load the project's .Renviron explicitly ------------------------------
+# R normally reads .Renviron at start-up, but only from the folder R was
+# launched in (and conda/Jupyter setups don't always honour it). Loading it
+# here makes the FRED key available no matter how the script is started.
+renviron_path <- file.path(ROOT, ".Renviron")
+if (file.exists(renviron_path)) {
+  readRenviron(renviron_path)
+} else if (file.exists(paste0(renviron_path, ".txt"))) {
+  # Classic Windows/Notepad trap: the file was saved as ".Renviron.txt".
+  warning("Found '.Renviron.txt' — rename it to '.Renviron' (no .txt).")
+  readRenviron(paste0(renviron_path, ".txt"))
+}
+
 # --- 2. Global switches -------------------------------------------------------
 # Set FORCE_DOWNLOAD=TRUE in your .Renviron (or Sys.setenv before sourcing)
 # to ignore the cache and pull fresh copies of every dataset.

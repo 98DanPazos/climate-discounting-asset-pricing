@@ -16,12 +16,13 @@ scripts <- c(
   "R/03_get_gistemp.R",
   "R/04_get_french.R",
   "R/05_get_rates.R",
-  "R/06_build_panel.R"
+  "R/06_build_panel.R",
+  "R/07_damage_regressions.R"
 )
 
 status <- vapply(scripts, function(s) {
   cat("\n==============================", s, "==============================\n")
-  ok <- tryCatch({ source(s, local = new.env()); TRUE },
+  ok <- tryCatch({ source(s, local = new.env(), encoding = "UTF-8"); TRUE },
                  error = function(e) { message("FAILED: ", conditionMessage(e)); FALSE })
   if (ok) "ok" else "FAILED"
 }, character(1))

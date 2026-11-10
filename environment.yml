@@ -19,6 +19,7 @@ dependencies:
   - r-stringr
   - r-lubridate
   - r-ggplot2
+  - r-ggrepel
   - r-scales
   - r-fixest
   - r-modelsummary
@@ -26,6 +27,7 @@ dependencies:
   - r-lmtest
   - r-wdi
   - r-fredr
+  - r-jsonlite
   # frenchdata is installed from CRAN by R/00_setup.R
   # ---------- Python ----------
   - python=3.11

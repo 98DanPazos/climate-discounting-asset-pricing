@@ -1,0 +1,33 @@
+                             Linear   Quadratic (main)    + country trends
+Dependent Var.:  GDP pc growth (pp) GDP pc growth (pp)  GDP pc growth (pp)
+                                                                          
+Temperature (°C)   -0.1208 (0.1813)    0.2900 (0.2822)   0.8541** (0.3180)
+Temperature²                        -0.0178* (0.0077) -0.0335*** (0.0091)
+Fixed-Effects:   ------------------ ------------------ -------------------
+Country                         Yes                Yes                 Yes
+Year                            Yes                Yes                 Yes
+Varying Slopes:  ------------------ ------------------ -------------------
+Year (Country)                   No                 No                 Yes
+________________ __________________ __________________ ___________________
+S.E. type               by: Country        by: Country         by: Country
+Observations                 10,216             10,216              10,216
+R2                          0.13040            0.13152             0.18269
+Within R2                   7.62e-5            0.00137             0.00206
+
+                  Driscoll-Kraay SE
+Dependent Var.:  GDP pc growth (pp)
+                                   
+Temperature (°C)    0.2900 (0.5068)
+Temperature²      -0.0178 (0.0142)
+Fixed-Effects:   ------------------
+Country                         Yes
+Year                            Yes
+Varying Slopes:  ------------------
+Year (Country)                   No
+________________ __________________
+S.E. type        Drisco.-Kra. (L=2)
+Observations                 10,216
+R2                          0.13152
+Within R2                   0.00137
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1

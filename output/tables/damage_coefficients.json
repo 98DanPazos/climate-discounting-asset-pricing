@@ -1,0 +1,42 @@
+{
+  "description": "Panel damage function: growth_it = b_temp*T + b_temp_sq*T^2 + country FE + year FE. Growth in percentage points (100 x log difference) per year; T in °C. SEs clustered by country.",
+  "sample": {
+    "countries": 185,
+    "years": [1961, 2025]
+  },
+  "main": {
+    "b_temp": 0.29001748406,
+    "b_temp_sq": -0.017841425983,
+    "vcov": [
+      [0.079624406123, -0.0017255466526],
+      [-0.0017255466526, 5.9631981817e-05]
+    ],
+    "t_opt": 8.1276430575,
+    "t_opt_se": 5.5544515397,
+    "n_obs": 10216
+  },
+  "rich": {
+    "b_temp": 0.23258864576,
+    "b_temp_sq": -0.011260002387,
+    "vcov": [
+      [0.049474919156, -0.00092501513559],
+      [-0.00092501513559, 4.7983889524e-05]
+    ],
+    "t_opt": 10.3280904283,
+    "t_opt_se": 7.9103202762,
+    "n_obs": 4920
+  },
+  "poor": {
+    "b_temp": 1.9941271293,
+    "b_temp_sq": -0.064000255221,
+    "vcov": [
+      [1.1228572867, -0.023502271187],
+      [-0.023502271187, 0.00054691716374]
+    ],
+    "t_opt": 15.5790560713,
+    "t_opt_se": 3.3986210883,
+    "n_obs": 5296
+  },
+  "canada_mean_temp": -4.1005882084,
+  "created": "2026-11-09 19:27"
+}
