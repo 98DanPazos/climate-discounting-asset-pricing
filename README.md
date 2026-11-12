@@ -1,5 +1,7 @@
 # Pricing the Future: Climate Damages, Discounting, and Temperature Risk
 
+**[▶ Interactive dashboard](https://98danpazos.github.io/climate-discounting-asset-pricing/)** · notebooks: [damages](notebooks/01_damages.ipynb) · [discounting](notebooks/02_discounting.ipynb) · [social cost of carbon](notebooks/03_scc.ipynb) · [asset pricing](notebooks/04_asset_pricing.ipynb)
+
 An empirical extension of my M.Sc. project at the University of Bath, *"Empirical analysis of asset pricing models: Pricing the future — effective discounting for climate damages."*
 
 The original brief compared fixed, Weitzman certainty-equivalent, stochastic (Newell–Pizer), and stochastic-discount-factor (SDF) approaches to valuing climate damages, and argued that fixed-rate discounting understates the social cost of carbon (SCC). This repo makes that argument **empirical**:
@@ -12,7 +14,7 @@ The original brief compared fixed, Weitzman certainty-equivalent, stochastic (Ne
 | 4. Asset pricing | Is temperature risk priced in equity returns? | Temperature betas + Fama–MacBeth on 49 industry portfolios (Bansal, Kiku & Ochoa) | R |
 | 5. Dashboard | Interactive summary | Plotly | Python |
 
-> **Status:** Modules 1-4 complete: damage function (`notebooks/01_damages.ipynb`), discounting engine (`02_discounting.ipynb`), social cost of carbon (`03_scc.ipynb`), temperature risk in stock returns (`04_asset_pricing.ipynb`). Dashboard in progress.
+> **Status:** complete. All five modules, including the interactive dashboard (`docs/index.html`, built by `python/build_dashboard.py`).
 
 ## What changed from the original paper
 
@@ -41,6 +43,7 @@ Rscript R/run_all.R           # downloads, builds data/processed/, runs Modules 
 python python/run_discounting.py   # Module 2: calibrate + compare discounting methods
 python python/run_scc.py           # Module 3: social cost of carbon under every method
 pytest python/tests                # unit tests (discounting engine + SCC)
+python python/build_dashboard.py   # Module 5: rebuild docs/index.html from all outputs
 ```
 
 On Windows (Anaconda Prompt) use `copy` instead of `cp`.
@@ -54,7 +57,7 @@ notebooks/         narrative notebooks for each module
 data/raw/          downloads (git-ignored, rebuilt by run_all.R)
 data/processed/    analysis-ready datasets
 output/            figures and tables
-docs/              original paper and write-up
+docs/              interactive dashboard (served by GitHub Pages)
 ```
 
 ## References
