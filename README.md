@@ -12,7 +12,7 @@ The original brief compared fixed, Weitzman certainty-equivalent, stochastic (Ne
 | 4. Asset pricing | Is temperature risk priced in equity returns? | Temperature betas + Fama–MacBeth on 49 industry portfolios (Bansal, Kiku & Ochoa) | R |
 | 5. Dashboard | Interactive summary | Plotly | Python |
 
-> **Status:** Modules 1-3 complete: damage function (`notebooks/01_damages.ipynb`), discounting engine (`02_discounting.ipynb`), social cost of carbon (`03_scc.ipynb`). Asset-pricing module in progress.
+> **Status:** Modules 1-4 complete: damage function (`notebooks/01_damages.ipynb`), discounting engine (`02_discounting.ipynb`), social cost of carbon (`03_scc.ipynb`), temperature risk in stock returns (`04_asset_pricing.ipynb`). Dashboard in progress.
 
 ## What changed from the original paper
 
@@ -37,7 +37,7 @@ conda env create -f environment.yml
 conda activate climate_ap
 Rscript R/00_setup.R          # one-time package check
 cp .Renviron.example .Renviron   # then paste your FRED key
-Rscript R/run_all.R           # downloads, builds data/processed/, runs Module 1
+Rscript R/run_all.R           # downloads, builds data/processed/, runs Modules 1 and 4 (R)
 python python/run_discounting.py   # Module 2: calibrate + compare discounting methods
 python python/run_scc.py           # Module 3: social cost of carbon under every method
 pytest python/tests                # unit tests (discounting engine + SCC)

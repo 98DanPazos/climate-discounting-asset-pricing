@@ -17,7 +17,8 @@ scripts <- c(
   "R/04_get_french.R",
   "R/05_get_rates.R",
   "R/06_build_panel.R",
-  "R/07_damage_regressions.R"
+  "R/07_damage_regressions.R",
+  "R/08_temperature_risk.R"
 )
 
 status <- vapply(scripts, function(s) {

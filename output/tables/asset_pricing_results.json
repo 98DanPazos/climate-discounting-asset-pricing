@@ -1,0 +1,135 @@
+{
+  "sample": ["1960-01-01", "2026-09-01"],
+  "shock_persistence": {
+    "us": 0.24578913,
+    "global": 0.85692555
+  },
+  "n_industries": 49,
+  "n_significant_betas": 4,
+  "fama_macbeth_temperature": [
+    {
+      "spec": "FF3 + US temp (main)",
+      "term": "shock_us",
+      "lambda": 0.03452467,
+      "se": 0.06181103,
+      "t": 0.55855197,
+      "months": 741,
+      "sd_beta": 0.64198459,
+      "premium_1sd_annual": 0.2659717
+    },
+    {
+      "spec": "FF3 + global temp",
+      "term": "shock_gl",
+      "lambda": 0.00666676,
+      "se": 0.00881584,
+      "t": 0.75622537,
+      "months": 741,
+      "sd_beta": 4.98536328,
+      "premium_1sd_annual": 0.39883469
+    },
+    {
+      "spec": "FF5 + US temp",
+      "term": "shock_us",
+      "lambda": 0.06752639,
+      "se": 0.06247188,
+      "t": 1.0809086,
+      "months": 699,
+      "sd_beta": 0.66056373,
+      "premium_1sd_annual": 0.53526583
+    },
+    {
+      "spec": "FF3 + US temp, post-1990",
+      "term": "shock_us",
+      "lambda": 0.12494016,
+      "se": 0.08955839,
+      "t": 1.39506936,
+      "months": 381,
+      "sd_beta": 0.73677728,
+      "premium_1sd_annual": 1.10463686
+    },
+    {
+      "spec": "FF3 + US temp, full-sample betas",
+      "term": "shock_us",
+      "lambda": 0.04095308,
+      "se": 0.21189653,
+      "t": 0.19326921,
+      "months": 741,
+      "sd_beta": 0.21877034,
+      "premium_1sd_annual": 0.10751182
+    }
+  ],
+  "top_positive": [
+    {
+      "industry": "Gold",
+      "beta_temp": 0.691,
+      "nw_se": 0.417,
+      "t": 1.66,
+      "months": 759
+    },
+    {
+      "industry": "Autos",
+      "beta_temp": 0.532,
+      "nw_se": 0.247,
+      "t": 2.15,
+      "months": 801
+    },
+    {
+      "industry": "Steel",
+      "beta_temp": 0.313,
+      "nw_se": 0.18,
+      "t": 1.74,
+      "months": 801
+    },
+    {
+      "industry": "Mines",
+      "beta_temp": 0.241,
+      "nw_se": 0.224,
+      "t": 1.08,
+      "months": 801
+    },
+    {
+      "industry": "Fun",
+      "beta_temp": 0.22,
+      "nw_se": 0.207,
+      "t": 1.06,
+      "months": 801
+    }
+  ],
+  "top_negative": [
+    {
+      "industry": "Guns",
+      "beta_temp": -0.323,
+      "nw_se": 0.203,
+      "t": -1.59,
+      "months": 759
+    },
+    {
+      "industry": "Clths",
+      "beta_temp": -0.333,
+      "nw_se": 0.167,
+      "t": -2,
+      "months": 801
+    },
+    {
+      "industry": "Hlth",
+      "beta_temp": -0.405,
+      "nw_se": 0.266,
+      "t": -1.53,
+      "months": 687
+    },
+    {
+      "industry": "Txtls",
+      "beta_temp": -0.41,
+      "nw_se": 0.193,
+      "t": -2.13,
+      "months": 801
+    },
+    {
+      "industry": "Coal",
+      "beta_temp": -0.47,
+      "nw_se": 0.375,
+      "t": -1.25,
+      "months": 801
+    }
+  ]
+}
